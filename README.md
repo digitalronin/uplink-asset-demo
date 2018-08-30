@@ -10,7 +10,7 @@ platform.
 
 `make install-python-sdk`
 
-* Start an adjoint node in a separate terminal window
+* Start an Uplink node in a separate terminal window
 
 `make run-docker`
 
