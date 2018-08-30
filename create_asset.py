@@ -4,18 +4,17 @@ from uplink import *
 
 rpc = UplinkJsonRpc(host="localhost", port=8545, tls=False)
 
-# Get the values here by running create_account.py and saving its output
+# Get the values here by running create_accounts.py and saving its output
 
-# public key: "097b8cae449f294ee09497ae2c450414764b95a208f2e7f9f686bcec133fea4e2308a11204cf1090de07175721bc5dce60710ec1b8604ca7bda2a077cbd7b9bd"
-skey = binascii.a2b_hex("a1c716d45d3be0364cb169a19b8c5868adc28f3a76fe9254c43af4c00ada7d7a")
-address = "4nbxG5q4JX48PEce3k3sXdWyaMqcUP8CjkzspXVHoWKH"
+skey = binascii.a2b_hex("ce7ec550305420d97ddf3b99a7db4e0d42a5b02758dfc16c4f7b26c73d2e03a8")
+address = "BGcURyq8kkRAZp8SRwY9ia6Z3Sz1Hn3feYAL3QbBvhjE"
 
 privkey = SigningKey.from_string(skey, curve = SECP256k1)
 
 tx_hash, asset_address = rpc.uplink_create_asset(
         private_key=privkey,
         origin=address,
-        name="My New Asset",
+        name="Toyota Prius XV189CF",
         supply=1000,
         asset_type_nm="Discrete",
         reference="Token",
