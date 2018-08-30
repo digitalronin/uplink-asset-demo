@@ -13,7 +13,7 @@ new_acct = rpc.uplink_create_account(
         public_key=pubkey,
         from_address=None,
         metadata=metadata,
-        timezone="GMT"
+        timezone="CET"
         )
 
 print("Public key:")
