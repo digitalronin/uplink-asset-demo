@@ -19,3 +19,6 @@ shell:
 run-test-script:
 	./venv/bin/python test.py  # localhost:8545 is hard-coded
 
+create-accounts:
+	./venv/bin/python create_accounts.py | tee accounts.txt
+
