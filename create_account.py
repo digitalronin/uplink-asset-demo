@@ -16,9 +16,11 @@ new_acct = rpc.uplink_create_account(
         timezone="GMT"
         )
 
-print("Public key: \n" + binascii.b2a_hex(pubkey.to_string()))
+print("Public key:")
+print(binascii.b2a_hex(pubkey.to_string()))
 
-print("Private key: \n" + binascii.b2a_hex(skey.to_string()))
+print("Private key:")
+print(binascii.b2a_hex(skey.to_string()))
 
 print("Account")
 print(new_acct)
